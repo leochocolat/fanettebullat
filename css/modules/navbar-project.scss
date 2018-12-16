@@ -1,0 +1,64 @@
+.container-navbar {
+  z-index: 100;
+  position: fixed;
+  width: 100vw;
+  min-height: 180px;
+  align-items: center;
+  margin: 0;
+
+  .col-close, .col-name {
+    margin: 0;
+  }
+  .container-close {
+    padding: 0 100px;
+    .elt-close {
+      display: block;
+      position: relative;
+      width: 35px;
+      height: 35px;
+
+      &:before, &:after {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: $blue;
+        position: absolute;
+        top: 50%;
+        left: 0;
+      }
+      &:before {
+        transform: translateY(-50%) rotate(45deg);
+      }
+      &:after {
+        transform: translateY(-50%) rotate(-45deg);
+      }
+
+    }
+  }
+
+  .container-name {
+    padding: 0 100px;
+    text-align: right;
+
+    .elt-name {
+      font-size: 60px;
+      color: white;
+      font-family: $bold;
+      text-transform: uppercase;
+      position: relative;
+      padding: 0 20px;
+      &:after {
+        transition: ease-out .2s width;
+        content: '';
+        width: 100%;
+        height: 13px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+}

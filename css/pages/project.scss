@@ -1,0 +1,127 @@
+#project {
+
+  .container-content {
+    padding: 200px 0;
+    justify-content: center;
+    margin: 0;
+
+    .title {
+      padding: 10px 0;
+      h1 {
+        font-family: $medium;
+        font-size: 25px;
+        text-align: center;
+      }
+    }
+    .description {
+      padding: 10px 25px 50px 25px;
+      p {
+        font-family: $medium;
+        font-size: 13px;
+      }
+      .link {
+        text-align: right;
+        a {
+          font-size: 15px;
+          text-transform: uppercase;
+          font-family: $bold;
+          border-bottom: 2px solid white;
+        }
+      }
+    }
+    .container-images {
+      padding: 0px 15px;
+      .col-image {
+        padding: 0 25px 40px 25px;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+
+    }
+
+    .container-image {
+      padding: 0px 15px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .container-details {
+      padding: 50px 15px;
+
+      p {
+        font-size: 13px;
+        font-family: $medium;
+      }
+
+      h2 {
+        font-size: 40px;
+        margin: 100px 0 60px 0;
+        font-family: $bold;
+        text-align: center;
+      }
+
+      .color {
+        position: relative;
+        width: 250px;
+        height: 180px;
+
+        &.blue {
+          background-color: blue;
+        }
+        &.yellow {
+          background-color: #F9F906;
+        }
+
+        .code-color {
+          font-size: 40px;
+          position: absolute;
+          top: 20px;
+          right: -20%;
+          font-family: $bold;
+        }
+
+      }
+
+      .col-font {
+        margin: 100px 0;
+        .font {
+          font-size: 50px;
+          line-height: 40px;
+          text-transform: uppercase;
+          font-family: "Passion One";
+
+          &.regular {
+            font-weight: 400;
+          }
+          &.bold {
+            font-weight: 700;
+          }
+          &.black {
+            font-weight: 900;
+          }
+        }
+      }
+
+    }
+
+    .box-link {
+      text-align: center;
+      a {
+        padding: 5px 10px;
+        color: black;
+        font-family: $black;
+        font-size: 20px;
+        text-transform: uppercase;
+        background-color: white;
+        text-align: center;
+      }
+    }
+  }
+
+
+}

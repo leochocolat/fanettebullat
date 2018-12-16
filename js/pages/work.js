@@ -10,7 +10,14 @@ $(".project-item a").hover(function(){
   $(".project-apercu").not($(classImg)).removeClass("active");
   $("." + classImg).addClass("active");
 
+  // let linkName = $(this)[0].innerHTML.replace(/[^0-9a-z]/gi, '')
+  // console.log(linkName);
+
+});
 
 
+$(".project-item").click(function(){
+
+  // console.log($(this).innerHTML.replace(/[^0-9a-z]/gi, ''));
 
 });
