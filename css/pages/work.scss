@@ -10,9 +10,6 @@
       .elt-project {
         position: relative;
         height: 100%;
-        &:before {
-          color: red;
-        }
         ul {
           margin: 0;
           position: absolute;
@@ -26,9 +23,25 @@
             line-height: 65px;
             text-align: right;
             .title-project {
+              padding: 0 15px;
               white-space: nowrap;
+              position: relative;
+              &:after {
+                transition: ease-out .2s width;
+                content: '';
+                width: 0%;
+                height: 10px;
+                background-color: white;
+                position: absolute;
+                top: 50%;
+                right: 0%;
+                transform: translateY(-50%);
+              }
               &.active {
-                position: relative;
+                &:after {
+                  transition: ease-out .2s width;
+                  width: 100%;
+                }
               }
             }
           }
