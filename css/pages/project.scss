@@ -53,6 +53,10 @@
     .container-details {
       padding: 50px 15px;
 
+      .row {
+        margin: 100px 0; 
+      }
+
       p {
         font-size: 13px;
         font-family: $medium;
@@ -76,6 +80,9 @@
         &.yellow {
           background-color: #F9F906;
         }
+        &.gandi {
+          background-color: #0FABAB;
+        }
 
         .code-color {
           font-size: 40px;
@@ -87,8 +94,16 @@
 
       }
 
+      .charte {
+        align-items: center;
+      }
+
       .col-font {
         margin: 100px 0;
+
+        &.col-margin-0 {
+          margin: 0;
+        }
         .font {
           font-size: 50px;
           line-height: 40px;

@@ -77,6 +77,10 @@ a {
     color: white;
     text-decoration: none; }
 
+#home .container-brand {
+  opacity: 0;
+  visibility: hidden; }
+
 #home .section-container {
   margin: 0;
   padding: 0;
@@ -279,6 +283,8 @@ a {
       height: auto; }
   #project .container-content .container-details {
     padding: 50px 15px; }
+    #project .container-content .container-details .row {
+      margin: 100px 0; }
     #project .container-content .container-details p {
       font-size: 13px;
       font-family: "helveticaneuemedium", Helvetica, Arial, sans-serif; }
@@ -295,14 +301,23 @@ a {
         background-color: blue; }
       #project .container-content .container-details .color.yellow {
         background-color: #F9F906; }
+      #project .container-content .container-details .color.gandi {
+        background-color: #0FABAB; }
       #project .container-content .container-details .color .code-color {
         font-size: 40px;
         position: absolute;
         top: 20px;
         right: -20%;
         font-family: "helveticaneuebold", Helvetica, Arial, sans-serif; }
+    #project .container-content .container-details .charte {
+      -webkit-align-items: center;
+         -moz-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
     #project .container-content .container-details .col-font {
       margin: 100px 0; }
+      #project .container-content .container-details .col-font.col-margin-0 {
+        margin: 0; }
       #project .container-content .container-details .col-font .font {
         font-size: 50px;
         line-height: 40px;
@@ -384,27 +399,37 @@ a {
                 transform: translateY(-50%); }
 
 .container-brand {
+  z-index: 1000;
   left: 50px;
   top: 40px;
   position: absolute; }
-  .container-brand .brand {
+  .container-brand .brand a {
+    padding: 0 10px;
+    position: relative;
     line-height: 45px;
     color: #0000ff;
     font-size: 50px;
     font-family: "helveticaneuebold", Helvetica, Arial, sans-serif; }
-    .container-brand .brand.active {
-      position: relative; }
-      .container-brand .brand.active:before {
+    .container-brand .brand a:before {
+      transition: ease-out .2s width;
+      content: '';
+      width: 0;
+      height: 7px;
+      background-color: #0000ff;
+      position: absolute;
+      top: 50%;
+      left: 0%; }
+    .container-brand .brand a:hover {
+      cursor: pointer; }
+      .container-brand .brand a:hover:before {
+        transition: ease-out .2s width;
         content: '';
-        width: 115%;
+        width: 100%;
         height: 7px;
         background-color: #0000ff;
         position: absolute;
         top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, 0);
-            -ms-transform: translate(-50%, 0);
-                transform: translate(-50%, 0); }
+        left: 0%; }
 
 .loader-container {
   width: 100vw;
