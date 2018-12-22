@@ -25,3 +25,7 @@ $(document).ready(function(){
   }, 1500);
 
 });
+
+$(".video video").ready(function(){
+  TweenMax.to(".video img", .01, {display: "none"});
+});
