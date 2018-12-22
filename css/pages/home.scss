@@ -97,11 +97,18 @@
         // }
         video {
           // display: none;
+          // position: absolute;
+          // top: 0;
+          // right: -35%;
+          // width: auto;
+          // height: 115%;
+        }
+        video {
           position: absolute;
           top: 0;
-          right: -35%;
+          right: 0;
           width: auto;
-          height: 115%;
+          height: 100%;
         }
       }
     }
