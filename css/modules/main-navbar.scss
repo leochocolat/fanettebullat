@@ -3,6 +3,12 @@
   left: 50px;
   top: 40px;
   position: absolute;
+
+  @media screen and (max-width: 768px) {
+    position: relative;
+    left: 5%;
+    max-width: calc(100% - 50px);
+  }
   .brand {
     a {
       padding: 0 10px;
@@ -11,6 +17,10 @@
       color: $blue;
       font-size: 50px;
       font-family: $bold;
+
+      @media screen and (max-width: 768px) {
+        padding: 0;
+      }
 
 
     &:before {

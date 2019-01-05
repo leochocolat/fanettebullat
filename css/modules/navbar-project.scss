@@ -5,12 +5,15 @@
   min-height: 180px;
   align-items: center;
   margin: 0;
+  padding: 0 100px;
+  @media screen and (max-width: 768px) {
+    padding: 0 25px;
+  }
 
   .col-close, .col-name {
     margin: 0;
   }
   .container-close {
-    padding: 0 100px;
     .elt-close {
       display: block;
       position: relative;
@@ -37,7 +40,6 @@
   }
 
   .container-name {
-    padding: 0 100px;
     text-align: right;
 
     .elt-name {
@@ -46,7 +48,6 @@
       font-family: $bold;
       text-transform: uppercase;
       position: relative;
-      padding: 0 20px;
       &:after {
         transition: ease-out .2s width;
         content: '';
@@ -58,7 +59,9 @@
         right: 0%;
         transform: translateY(-50%);
       }
+      @media screen and (max-width: 992px) {
+        font-size: 40px;
+      }
     }
   }
-
 }

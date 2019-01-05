@@ -6,15 +6,42 @@
     width: 100vw;
     margin: 0;
 
+    @media screen and (max-width: 1200px) {
+      padding: 50px;
+    }
+    @media screen and (max-width: 992px) {
+      padding: 20px;
+    }
+    @media screen and (max-width: 768px) {
+      height: auto;
+      width: 100%;
+      padding: 0;
+    }
+
     .container-project {
+      @media screen and (max-width: 768px) {
+        padding: 0;
+        margin-top: 100px;
+      }
       .elt-project {
         position: relative;
         height: 100%;
+
+        @media screen and (max-width: 768px) {
+          // width: 100vw;
+        }
         ul {
           margin: 0;
           position: absolute;
           bottom: 0;
           right: 0;
+
+          @media screen and (max-width: 768px) {
+            position: inherit;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+          }
           .project-item {
             list-style: none;
             font-size: 65px;
@@ -22,10 +49,51 @@
             text-transform: uppercase;
             line-height: 65px;
             text-align: right;
+
+            @media screen and (max-width: 768px) {
+              height: 50vw;
+              font-size: 40px;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-position: center;
+              background-size: cover;
+              &.item6 {
+                background-image: url(../sources/colors-mobile.jpg);
+              }
+              &.item5 {
+                background-image: url(../sources/basik-mobile.jpg);
+              }
+              &.item4 {
+                background-image: url(../sources/photography-mobile.jpg);
+              }
+              &.item3 {
+                background-image: url(../sources/gandi-mobile.jpg);
+              }
+              &.item2 {
+                background-image: url(../sources/klein-mobile.jpg);
+              }
+              &.item1 {
+                background-image: url(../sources/audiovisuel-mobile.jpg);
+              }
+            }
+            @media screen and (max-width: 500px) {
+              font-size: 30px;
+            }
+            @media screen and (max-width: 400px) {
+              font-size: 22px;
+            }
+
             .title-project {
               padding: 0 15px;
               white-space: nowrap;
               position: relative;
+
+              @media screen and (max-width: 768px) {
+                background-color: black;
+              }
+
               &:after {
                 transition: ease-out .2s width;
                 content: '';
