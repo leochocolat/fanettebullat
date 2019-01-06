@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Passion+One:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900");
 @font-face {
   font-family: 'helveticaneuebold';
   src: url("../font/helvetica_neu_bold-webfont.woff2") format("woff2"), url("../font/helvetica_neu_bold-webfont.woff") format("woff");
@@ -454,13 +455,16 @@ a {
               align-items: center; }
     #project .container-content .container-details .col-font {
       margin: 100px 0; }
+      #project .container-content .container-details .col-font.montserrat {
+        font-family: 'Montserrat'; }
+      #project .container-content .container-details .col-font.passionone {
+        font-family: "Passion One"; }
       #project .container-content .container-details .col-font.col-margin-0 {
         margin: 0; }
       #project .container-content .container-details .col-font .font {
         font-size: 50px;
         line-height: 40px;
-        text-transform: uppercase;
-        font-family: "Passion One"; }
+        text-transform: uppercase; }
         @media screen and (max-width: 768px) {
           #project .container-content .container-details .col-font .font {
             font-size: 30px;
