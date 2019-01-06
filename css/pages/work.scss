@@ -92,6 +92,10 @@
 
               @media screen and (max-width: 768px) {
                 background-color: black;
+
+                &:after {
+                  display: none;
+                }
               }
 
               &:after {

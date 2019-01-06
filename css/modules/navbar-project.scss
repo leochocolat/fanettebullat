@@ -7,8 +7,11 @@
   margin: 0;
   padding: 0 100px;
   @media screen and (max-width: 768px) {
-    padding: 0 25px;
+    padding: 25px 2%;
+    align-items: baseline;
+    min-height: 100px;
   }
+
 
   .col-close, .col-name {
     margin: 0;
