@@ -15,6 +15,15 @@ $(".project-item a").hover(function(){
 
 });
 
+$(".project-item a").mouseleave(function() {
+
+  $(this).removeClass("active");
+  $(".project-apercu").removeClass("active");
+
+});
+
+
+
 
 $(".project-item").click(function(){
 

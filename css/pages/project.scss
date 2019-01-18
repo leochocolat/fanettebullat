@@ -33,6 +33,13 @@
         }
       }
     }
+    .subtitle {
+      h3 {
+        font-size: 23px;
+        padding: 10px 0;
+        font-family: $medium;
+      }
+    }
     .container-images {
       padding: 0px 15px;
       .col-image {
