@@ -15,7 +15,6 @@ $(".scrollAppear").each(function() {
     triggerHook: ".9",
   })
   .setTween(scrollAppear)
-  .addIndicators()
   .addTo(controller);
 
 });
