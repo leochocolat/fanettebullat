@@ -28,3 +28,7 @@ $(document).ready(function() {
   TweenMax.to("#project .container-navbar", 1, {autoAlpha: 1, ease: Power1.easeIn});
 
 });
+
+$(".video video").ready(function(){
+  TweenMax.to(".video img", .01, {display: "none"});
+});

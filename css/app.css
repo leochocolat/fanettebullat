@@ -645,7 +645,21 @@ a {
     font-size: 250px;
     text-transform: uppercase;
     font-family: "helveticaneueheavy", Helvetica, Arial, sans-serif;
-    color: #0000ff; }
+    color: #0000ff;
+    -webkit-animation: defile 2s forwards linear;
+            animation: defile 2s forwards linear; }
+
+@-webkit-keyframes defile {
+  0% {
+    left: 0; }
+  100% {
+    left: -40%; } }
+
+@keyframes defile {
+  0% {
+    left: 0; }
+  100% {
+    left: -40%; } }
 
 .layer {
   position: fixed;
