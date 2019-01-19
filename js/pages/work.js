@@ -30,3 +30,15 @@ $(".project-item").click(function(){
   // console.log($(this).innerHTML.replace(/[^0-9a-z]/gi, ''));
 
 });
+
+//ANIMATIONS ENTREE
+
+$(document).ready(function() {
+
+  let projectTitle = new TimelineMax();
+
+  projectTitle.add(
+    TweenMax.staggerFromTo(".project-item a", 1, {autoAlpha: 0}, {autoAlpha: 1, ease: Power1.easeInOut}, .05)
+  );
+
+});

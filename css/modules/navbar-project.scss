@@ -55,13 +55,22 @@
       &:after {
         transition: ease-out .2s width;
         content: '';
-        width: 100%;
+        width: 0%;
         height: 13px;
         background-color: white;
         position: absolute;
         top: 50%;
         right: 0%;
         transform: translateY(-50%);
+        animation: line .5s ease-in-out .5s forwards;
+        @keyframes line {
+          0% {
+            width: 0%;
+          }
+          100% {
+            width: 100%;
+          }
+        }
       }
       @media screen and (max-width: 992px) {
         font-size: 40px;

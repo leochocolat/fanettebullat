@@ -50,6 +50,10 @@
             line-height: 65px;
             text-align: right;
 
+            a {
+              opacity: 0;
+            }
+
             @media screen and (max-width: 768px) {
               height: 50vw;
               font-size: 40px;
