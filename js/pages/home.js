@@ -1,3 +1,9 @@
+// AUTOPLAY 
+document.getElementById('vid').play();
+
+
+
+//LAYER APPEAR
 let controller = new ScrollMagic.Controller();
 
 let layer = new TimelineMax();
