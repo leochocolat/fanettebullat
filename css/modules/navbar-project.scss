@@ -13,7 +13,6 @@
     min-height: 100px;
   }
 
-
   .col-close, .col-name {
     margin: 0;
   }
@@ -54,7 +53,7 @@
       text-transform: uppercase;
       position: relative;
       &:after {
-        transition: ease-out .2s width;
+        transition: ease-out .2s width height;
         content: '';
         width: 0%;
         height: 13px;
@@ -75,6 +74,15 @@
       }
       @media screen and (max-width: 992px) {
         font-size: 40px;
+      }
+
+      &.resize {
+        transition: ease-in-out .3s padding;
+        padding: 0 10px;
+        &:after {
+          transition: ease-in-out .3s height;
+          height: 9px;
+        }
       }
     }
   }

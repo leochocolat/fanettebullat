@@ -566,7 +566,7 @@ a {
       text-transform: uppercase;
       position: relative; }
       .container-navbar .container-name .elt-name:after {
-        transition: ease-out .2s width;
+        transition: ease-out .2s width height;
         content: '';
         width: 0%;
         height: 13px;
@@ -594,6 +594,12 @@ a {
       @media screen and (max-width: 992px) {
         .container-navbar .container-name .elt-name {
           font-size: 40px; } }
+      .container-navbar .container-name .elt-name.resize {
+        transition: ease-in-out .3s padding;
+        padding: 0 10px; }
+        .container-navbar .container-name .elt-name.resize:after {
+          transition: ease-in-out .3s height;
+          height: 9px; }
 
 .container-brand {
   opacity: 0;
@@ -676,7 +682,7 @@ a {
     left: -40%; } }
 
 .layer {
-  position: absolute;
+  position: fixed;
   left: 50px;
   bottom: 40px;
   font-family: "helveticaneuelight", Helvetica, Arial, sans-serif;

@@ -18,3 +18,19 @@ $(".scrollAppear").each(function() {
   .addTo(controller);
 
 });
+
+
+let navbar = new TimelineMax();
+
+navbar.add([
+  TweenMax.to(".elt-name", .2, {fontSize: "35px", ease: Power1.easeInOut}),
+]);
+
+new ScrollMagic.Scene({
+  triggerElement: ".container-content",
+  offset: 200,
+  triggerHook: 0.1
+})
+.setTween(navbar)
+.setClassToggle(".elt-name", "resize")
+.addTo(controller);
