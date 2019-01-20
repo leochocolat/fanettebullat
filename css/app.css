@@ -249,14 +249,13 @@ a {
               -ms-flex-direction: column;
                   flex-direction: column; } }
       #work .container-work .container-project .elt-project ul .project-item {
+        opacity: 0;
         list-style: none;
         font-size: 65px;
         font-family: "helveticaneuebold", Helvetica, Arial, sans-serif;
         text-transform: uppercase;
         line-height: 65px;
         text-align: right; }
-        #work .container-work .container-project .elt-project ul .project-item a {
-          opacity: 0; }
         @media screen and (max-width: 768px) {
           #work .container-work .container-project .elt-project ul .project-item {
             height: 50vw;
@@ -276,6 +275,8 @@ a {
                     justify-content: center;
             background-position: center;
             background-size: cover; }
+            #work .container-work .container-project .elt-project ul .project-item.item7 {
+              background-image: url(../sources/nike3d-mobile.jpg); }
             #work .container-work .container-project .elt-project ul .project-item.item6 {
               background-image: url(../sources/colors-mobile.jpg); }
             #work .container-work .container-project .elt-project ul .project-item.item5 {
@@ -379,6 +380,18 @@ a {
       #project .container-content .container-images .col-image img {
         width: 100%;
         height: auto; }
+      #project .container-content .container-images .col-image .iframe-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 0; }
+        #project .container-content .container-images .col-image .iframe-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; }
       #project .container-content .container-images .col-image .video-wrapper {
         position: relative;
         padding-bottom: 56.25%;
@@ -510,7 +523,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  padding: 0 100px; }
+  padding: 0 100px;
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0)); }
   @media screen and (max-width: 768px) {
     .container-navbar {
       padding: 25px 2%;
@@ -662,7 +676,7 @@ a {
     left: -40%; } }
 
 .layer {
-  position: fixed;
+  position: absolute;
   left: 50px;
   bottom: 40px;
   font-family: "helveticaneuelight", Helvetica, Arial, sans-serif;

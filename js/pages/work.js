@@ -38,7 +38,7 @@ $(document).ready(function() {
   let projectTitle = new TimelineMax();
 
   projectTitle.add(
-    TweenMax.staggerFromTo(".project-item a", 1, {autoAlpha: 0}, {autoAlpha: 1, ease: Power1.easeInOut}, .05)
+    TweenMax.staggerFromTo(".project-item", 1, {autoAlpha: 0}, {autoAlpha: 1, ease: Power1.easeInOut}, .05)
   );
 
 });
